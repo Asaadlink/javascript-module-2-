@@ -13,9 +13,15 @@
  *      .....
  * </div>
  */
-function exerciseOne(arrayOfPeople) {
+ function exerciseOne(arrayOfPeople) {
   let content = document.querySelector("#content");
-}
+  let nameArray = document.createElement('h1');
+  let jobArray = document.createElement('h2');
+  content.appendChild(nameArray);
+  content.appendChild(jobArray);
+};
+
+console.log(exerciseOne());
 
 /**
  *
@@ -25,12 +31,14 @@ function exerciseOne(arrayOfPeople) {
  *
  */
 function exerciseTwo(shopping) {
-  //Write your code in here
-}
+  for (var i = 0; i < shopping.length; i++) {
+    console.log(shopping[i]);
+};
+
+
 
 /**
     I'd like to display my three favorite books inside a nice webpage!
-
     const books = [
         {
             title: "The Design of Everyday Things",
@@ -48,13 +56,11 @@ function exerciseTwo(shopping) {
             alreadyRead: true
         }
     ];
-
     Iterate through the array of books.
     - For each book, create a <p> element with the book title and author and append it to the page.
     - Use a <ul> and <li> to display the books.
     - Add an <img> to each book that links to a URL of the book cover.
     - Change the style of the book depending on whether you have read it (green) or not (red).
-
     The end result should look something like this: https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 **/
 function exerciseThree(books) {
