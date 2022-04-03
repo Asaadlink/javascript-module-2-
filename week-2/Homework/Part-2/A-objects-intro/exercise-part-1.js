@@ -41,15 +41,16 @@ const phone = {
 
 const Nintendo = {
     serie: "switch",
+    consoleType:"Hybrid",
     color: "black",
-    control: "",
-    age: 3,
-    waterProof: true
+    control: "Joy-Con",
+    waterProof: false,
 };
 
-const pasta = {
-    isAlDante: true,
-    sauce: "tomate",
-    ingredient: "garlic",
-    homeMade: true
+const earth = {
+    landSurface: "149,000,000 km²",
+    waterSurface: "361,000,000 km²",
+    equatorialCircumferences: "40,075 km",
+    polardiameter: "12,714 km",
+    mass: "5.98x1024 kg",
 }

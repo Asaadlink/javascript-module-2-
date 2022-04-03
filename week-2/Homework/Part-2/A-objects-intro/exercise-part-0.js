@@ -10,5 +10,7 @@ let laptop = {
   color: "grey",
   year: 2018,
   containOffice: true,
-  coverCase: "Black"
+  OS: "Ubuntu",
+  Graphics: "Intel HD Graphics 620",
+  Processor: "Core i5",
 };
