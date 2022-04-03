@@ -5,6 +5,9 @@
 // WRITE CODE HERE
 
 
-console.log(kitten.name);
+let kitten = {
+    name: "Gilbert",
+  };
+  console.log(kitten.name);
 
 // -> it should output: "Gilbert"

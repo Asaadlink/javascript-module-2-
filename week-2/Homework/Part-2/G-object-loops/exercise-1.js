@@ -3,10 +3,15 @@
 // Try to use both methods shown above to achieve this
 
 const studentGrades = {
-    tom: 20,
-    george: 17,
-    abdul: 19,
-  };
+  tom: 20,
+  george: 17,
+  abdul: 19,
+};
+for (const property in studentGrades) {
+  if (studentGrades[property] > 18) {
+    console.log(`${property.toUpperCase()} - ${studentGrades[property]}`);
+  }
+}
   
   // Prints
   // TOM - 20
