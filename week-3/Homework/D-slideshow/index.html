@@ -13,5 +13,27 @@
   </head>
   <body>
     <!-- Write your HTML in here -->
-  </body>
-</html>
+    <div class="container">
+      <div   class="heading" id="idHeading">Image Carousel</div>
+       <img
+         id="imgHeading"
+         src="https://cyf-image-carousel.netlify.app/sample-images/kitten1.jpg"
+         height="400 vh"
+         width="400vh"
+         alt="random"
+       />
+       <br />
+       <button id="autoForward" type="button">Auto-Fwd</button>
+       <button id="forward" type="button">Forward</button>
+       <button id="backward" type="button">Backward</button>
+       <button id="autoBackward" type="button">Auto-Bwd</button>
+       <br /><br />
+       <label for="delay"
+       >you can also add a delay time for image transition</label>
+       <br />
+       <input id="delay" name="delay" type="number" /><br />
+       <br />
+     </div>
+     <script src="slideshow.js"></script>
+     </body>
+   </html>
