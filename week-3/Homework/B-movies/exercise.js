@@ -31,32 +31,40 @@ TIP: Use the functions you created on tasks 1-3
 
 ================
 */
-var movies = [
-  {
-    title: "Color Out of Space",
-    director: "Richard Stanley",
-    type: "sci-fi",
-    haveWatched: true,
-  },
-  {
-    title: "A Twelve-Year Night",
-    director: "Álvaro Brechner",
-    type: "horror",
-    haveWatched: false,
-  },
-  {
-    title: "The Whistlers",
-    director: "Corneliu Porumboiu",
-    type: "comedy",
-    haveWatched: true,
-  },
-  {
-    title: "The Invisible Man",
-    director: "Leigh Whannell",
-    type: "horror",
-    haveWatched: false,
-  },
-];
+const allMovies = document.querySelector("#all-movies");
+const moviesNumber = document.querySelector("#movies-number");
+const showMovies = (movieArray) => {
+ moviesNumber.textContent = movies.length;
+ movieArray.forEach( (movie) => {
+  const p = document.createElement ("p");
+  p.textContent = `${movie.title} ${movie.director}`;
+  allMovies.appendChild(p);
+ });
+};
+
+const myMovie = {
+  title: "Spider-Man",
+  director: "Sam Raimi",
+  type: "Sci-Fi",
+  haveWatched: true,
+}
+
+const addMovie = (movie) => {
+  console.log(movies);
+  setTimeout(() => {
+    movies.push(movie);
+    console.log(movies);
+    showMovies(movies);
+  }, 2000);
+};
+
+setTimeout(() => {
+  showMovies(movies);
+}, 1000);
+
+setTimeout(() => {
+  addMovie(myMovie);
+}, 2000);
 
 // create showMovies function
 
